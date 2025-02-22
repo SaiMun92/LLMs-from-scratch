@@ -131,7 +131,7 @@ def plot_losses(epochs_seen, tokens_seen, train_losses, val_losses):
 def main(gpt_config, settings):
 
     torch.manual_seed(123)
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
 
     ##############################
     # Download data if necessary
