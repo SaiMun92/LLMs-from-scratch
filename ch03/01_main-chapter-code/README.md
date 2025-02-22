@@ -15,4 +15,8 @@
 - They multi-head attention mechanism combines whatever we have learned in the attention mechanism and see how 
 each attention block gets combined at the end by applying the foward pass of the last project layer to the context vector.
 - In summary, 
-Attention(Q, K, V) = Softmax(Q.K^T/ squareroot(dimension of K)) * V
+MaskedAttention(Q, K, V, M) = Softmax(Q.K^T/ squareroot(dimension of K) + M) * V
+M = Masked
+Q = Query
+K = Key
+V = Value
