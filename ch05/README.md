@@ -15,3 +15,10 @@
 - [06_user_interface](06_user_interface) implements an interactive user interface to interact with the pretrained LLM
 - [07_gpt_to_llama](07_gpt_to_llama) contains a step-by-step guide for converting a GPT architecture implementation to Llama 3.2 and loads pretrained weights from Meta AI
 - [08_memory_efficient_weight_loading](08_memory_efficient_weight_loading) contains a bonus notebook showing how to load model weights via PyTorch's `load_state_dict` method more efficiently
+
+
+## Summary
+- This topic is about training an LLM. Combining what we have learned about the multi-head attention layer in Chapter 3 and Feed-Forward Layer with LayerNorm in Chapter 4.
+- It also introduces the idea of top-k sampling to reduce the probability of nonsensical sentences.
+- They also mentioned about temperature scaling where temp = 0 means no changes. Temperature scaling is just dividing the logits with a number and applying a softmax function to it.
+- It also teaches you about loading pretrained weights from OpenAI.
